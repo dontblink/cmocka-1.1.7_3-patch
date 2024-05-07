@@ -1,6 +1,7 @@
 # cmocka-1.1.7_3-patch
 meson patch file for cmocka 1.1.7  
 as of meson 1.3.0, `install: true` will override `build_by_default:false`, which leads to meson building libraries even if there are no dependencies on said library. For my use case, this is problematic when I cross compile - the non-native library can't be built with my cross-compile toolchain, but meson will attempt (and fail) to build it.  
+This patch sets `install: false` to all library targets, and is based of [cmocka-1.1.7_2-patch](https://wrapdb.mesonbuild.com/v2/cmocka_1.1.7-2/cmocka.wrap) from wrapdb  
 Relevant git issue: https://github.com/mesonbuild/meson/issues/12530
 
 
