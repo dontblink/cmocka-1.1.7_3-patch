@@ -1,6 +1,6 @@
 # cmocka-1.1.7_3-patch
-meson patch file for cmocka 1.1.7
-as of meson 1.3.0, `install: true` will override `build_by_default:false`, which leads to meson building libraries even if there are no dependencies on said library. For my use case, this is problematic when I cross compile - the non-native library can't be built with my cross-compile toolchain, but meson will attempt (and fail) to build it.
+meson patch file for cmocka 1.1.7  
+as of meson 1.3.0, `install: true` will override `build_by_default:false`, which leads to meson building libraries even if there are no dependencies on said library. For my use case, this is problematic when I cross compile - the non-native library can't be built with my cross-compile toolchain, but meson will attempt (and fail) to build it.  
 Relevant git issue: https://github.com/mesonbuild/meson/issues/12530
 
 
@@ -16,7 +16,8 @@ patch_url = https://github.com/dontblink/cmocka-1.1.7_3-patch/releases/download/
 patch_hash = d04d074329d83e10da6cc8239c09168d334db48efe84f5e93b72a4b4ade4c8f7
 ```
 
-For those following along using this as an example of how to make patch files: 
-zip file nameneeds to match `patch_filename`
-folder at root of zip needs to match `directory`
-after creating a zip release, to get `patch_hash`, take the zip to https://md5file.com/calculator and grab the SHA256 hash 
+For those following along using this as an example of how to make patch files:  
+Zip file name needs to match `patch_filename`  
+Folder at root of zip needs to match `directory`  
+Make a release out of said zip file, or upload to your preferred file server to get a url for `patch_url`
+To get `patch_hash`, take the zip to https://md5file.com/calculator and grab the SHA256 hash (no way to grab this straight from github at the moment)
