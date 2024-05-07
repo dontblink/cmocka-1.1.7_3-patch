@@ -19,5 +19,5 @@ patch_hash = d04d074329d83e10da6cc8239c09168d334db48efe84f5e93b72a4b4ade4c8f7
 For those following along using this as an example of how to make patch files:  
 Zip file name needs to match `patch_filename`  
 Folder at root of zip needs to match `directory`  
-Make a release out of said zip file, or upload to your preferred file server to get a url for `patch_url`
+Make a release out of said zip file, or upload to your preferred file server to get a url for `patch_url`  
 To get `patch_hash`, take the zip to https://md5file.com/calculator and grab the SHA256 hash (no way to grab this straight from github at the moment)
