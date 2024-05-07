@@ -192,7 +192,7 @@ libcmocka = library(
   soversion: host_machine.system() != 'windows' ? lib_version.split('.')[0] : '',
   version: lib_version,
   dependencies: threads_dep,
-  install: false
+  install: false,
   build_by_default: false,
 )
 
