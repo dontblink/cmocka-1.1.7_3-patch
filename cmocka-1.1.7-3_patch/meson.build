@@ -18,7 +18,7 @@ project(
   version: '1.1.7',
   license: 'APLv2',
   meson_version: '>= 0.54.1',
-  default_options: ['c_std=c99', 'buildtype=debugoptimized'],
+  default_options: ['c_std=gnu99', 'buildtype=debugoptimized'],
 )
 
 lib_version = '0.8.0'
