@@ -182,6 +182,10 @@ cfile = configure_file(
 ###########################
 # Subdirectory Processing #
 ###########################
+_overrides = []
+if host_machine.system() != 'windows'
+  _overrides += 'c_std=gnu99'
+endif
 
 libcmocka = library(
   'cmocka',
@@ -194,6 +198,7 @@ libcmocka = library(
   dependencies: threads_dep,
   install: false,
   build_by_default: false,
+  override_options : _overrides,
 )
 
 libcmocka_native = library(
@@ -208,6 +213,7 @@ libcmocka_native = library(
   install: false, # Cannot install native targets in cross builds
   native: true,
   build_by_default: false,
+  override_options : _overrides,
 )
 
 ######################
