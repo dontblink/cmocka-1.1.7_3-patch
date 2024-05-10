@@ -14,7 +14,7 @@ source_filename = cmocka-1.1.7.tar.xz
 source_hash = 810570eb0b8d64804331f82b29ff47c790ce9cd6b163e98d47a4807047ecad82
 patch_filename = cmocka_1.1.7-3_patch.zip
 patch_url = https://github.com/dontblink/cmocka-1.1.7_3-patch/releases/download/v1.0/cmocka_1.1.7-3_patch.zip
-patch_hash = d04d074329d83e10da6cc8239c09168d334db48efe84f5e93b72a4b4ade4c8f7
+patch_hash = f89bb5feadaa9611bb124a8c31ed479416818e4389251758a966b8a44f184e32
 ```
 
 For those following along using this as an example of how to make patch files:  
